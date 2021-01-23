@@ -2,7 +2,7 @@
 (() => {
   const BTNRESET = 'btnReset';
   const ID_COUNTER = 'counter';
-  const COUNT_VALUE = 100;
+  const COUNT_VALUE = 3600;
   const TIME_INTERVAL = 10;
 
   class CountComponent {
@@ -36,7 +36,7 @@
 
     updateText = ({ elementCounter, counter }) => () => {
       const identText = '$$counter';
-      const textDefault = `Starting in <strong> ${identText} </strong> seconds...`;
+      const textDefault = `Starting in <strong> ${identText} </strong> seconds / 1 min...`;
       elementCounter.innerHTML = textDefault.replace(
         identText,
         counter.value--
